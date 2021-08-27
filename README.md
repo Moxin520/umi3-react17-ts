@@ -1,2 +1,15 @@
-# umi3-react17-ts
-umi3-react17-ts 相关学习demo及配置
+# umi project
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```
