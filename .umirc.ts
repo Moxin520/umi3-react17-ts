@@ -21,6 +21,13 @@ export default defineConfig({
       icon: 'home',
       component: '@/pages/index',
     },
+    {
+      path: '/PersonalInformation',
+      name: '个人信息', // 兼容此写法
+      icon: 'home',
+      component: '@/pages/PersonalInformation/index',
+      hideInMenu: true,
+    },
   ],
   // 快速刷新
   fastRefresh: {},

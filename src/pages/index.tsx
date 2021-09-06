@@ -2,8 +2,8 @@ import styles from './index.less';
 
 export default function IndexPage() {
   return (
-    <div>
-      <h1 className={styles.title}>Page index</h1>
+    <div className={styles.home}>
+      <h1>我是首页</h1>
     </div>
   );
 }
