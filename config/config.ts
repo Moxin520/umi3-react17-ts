@@ -1,4 +1,5 @@
 import { defineConfig } from 'umi';
+import routes from './routes';
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -17,39 +18,13 @@ export default defineConfig({
   // 浏览器图标
   favicon: '/e11.ico',
   // 路由配置
-  routes: [
-    {
-      path: '/',
-      name: '首页', // 兼容此写法
-      icon: 'home',
-      component: '@/pages/index',
-    },
-    {
-      path: '/PersonalInformation',
-      name: '个人信息', // 兼容此写法
-      icon: 'home',
-      component: '@/pages/PersonalInformation/index',
-      hideInMenu: true,
-    },
-    {
-      path: '/Learn',
-      name: '学习天地',
-      icon: 'home',
-      routes: [
-        {
-          path: '/Learn/HowToUseDva',
-          name: 'dva使用', // 兼容此写法
-          component: '@/pages/HowToUseDva/index',
-        },
-      ],
-    },
-  ],
+  routes,
   // 快速刷新
   fastRefresh: {},
   // 提升打包编译速度x
   mfsu: {},
   // 启用按需加载
-  dynamicImport: {},
+  dynamicImport: { loading: '@/pages/Loading' },
   // 为文件名添加hash值
   hash: true,
   // 设置路由模式

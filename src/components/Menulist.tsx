@@ -7,15 +7,7 @@ import {
   PoweroffOutlined,
 } from '@ant-design/icons';
 
-const Menulist = () => {
-  const onClick = ({ key }: any): void => {
-    message.destroy();
-    if (key === '1') {
-      history.push('/PersonalInformation');
-    } else {
-      message.info(`Click on item ${key}`);
-    }
-  };
+const Menulist = (onClick: any) => {
   return (
     <Menu onClick={onClick}>
       <Menu.Item key="1">
@@ -32,3 +24,6 @@ const Menulist = () => {
 };
 
 export default Menulist;
+// export default connect(({ userModels }: { userModels: UserModelState }) => ({
+//   userModels,
+// }))(Menulist);
