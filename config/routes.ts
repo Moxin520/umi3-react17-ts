@@ -43,6 +43,26 @@ export default [
         component: '@/pages/HowToUseDva/index',
         wrappers: ['@/wrappers/auth'],
       },
+      {
+        path: '/Learn/SimpleCase',
+        name: '简单案例', // 兼容此写法
+        component: '@/pages/SimpleCase/index',
+        wrappers: ['@/wrappers/auth'],
+      },
+    ],
+  },
+  {
+    path: '/Work',
+    name: '工作用例',
+    icon: 'home',
+    wrappers: ['@/wrappers/auth'],
+    routes: [
+      {
+        path: '/Work/CanvasHat',
+        name: 'canvas画帽子', // 兼容此写法
+        component: '@/pages/CanvasHat/index',
+        wrappers: ['@/wrappers/auth'],
+      },
     ],
   },
 

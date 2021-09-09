@@ -8,7 +8,7 @@ export default defineConfig({
   // antd-pro 导航栏
   layout: {
     // 标题及导航名字
-    name: 'Ant Design',
+    name: 'React Demo',
     // 国际化开启
     locale: true,
     // 导航栏位置
