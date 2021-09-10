@@ -49,6 +49,12 @@ export default [
         component: '@/pages/SimpleCase/index',
         wrappers: ['@/wrappers/auth'],
       },
+      {
+        path: '/Learn/CanvasTest',
+        name: 'canvas测试', // 兼容此写法
+        component: '@/pages/CanvasTest/index',
+        wrappers: ['@/wrappers/auth'],
+      },
     ],
   },
   {
