@@ -71,6 +71,20 @@ export default [
       },
     ],
   },
+  {
+    path: '/Three',
+    name: 'three.js学习',
+    icon: 'home',
+    wrappers: ['@/wrappers/auth'],
+    routes: [
+      {
+        path: '/Three/AddObj',
+        name: 'obj加载', // 兼容此写法
+        component: '@/pages/threeDemo/AddObj/index',
+        wrappers: ['@/wrappers/auth'],
+      },
+    ],
+  },
 
   { component: '@/pages/404', wrappers: ['@/wrappers/auth'] },
 ];
