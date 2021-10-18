@@ -8,3 +8,6 @@ declare module '*.svg' {
   const url: string;
   export default url;
 }
+
+declare module 'three-obj-mtl-loader';
+declare module 'three';
