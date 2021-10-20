@@ -83,6 +83,12 @@ export default [
         component: '@/pages/threeDemo/AddObj/index',
         wrappers: ['@/wrappers/auth'],
       },
+      {
+        path: '/Three/Shapes',
+        name: 'Shapes', // 兼容此写法
+        component: '@/pages/threeDemo/Shapes/index',
+        wrappers: ['@/wrappers/auth'],
+      },
     ],
   },
 
